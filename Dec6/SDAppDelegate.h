@@ -11,5 +11,6 @@
 @interface SDAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (strong, nonatomic) NSMutableDictionary *model;
 
 @end

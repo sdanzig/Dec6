@@ -18,6 +18,9 @@
 		F472E44A16701FAC003A073D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F472E44916701FAC003A073D /* Default-568h@2x.png */; };
 		F472E44D16701FAC003A073D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F472E44B16701FAC003A073D /* MainStoryboard.storyboard */; };
 		F472E45016701FAC003A073D /* SDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F472E44F16701FAC003A073D /* SDViewController.m */; };
+		F4E215B5167044F70070943B /* SDBasicInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E215B4167044F70070943B /* SDBasicInfoViewController.m */; };
+		F4E215B916704CEB0070943B /* SDSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E215B816704CEB0070943B /* SDSettingViewController.m */; };
+		F4E215BC1670522C0070943B /* SDConfirmationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4E215BB1670522C0070943B /* SDConfirmationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +40,12 @@
 		F472E44C16701FAC003A073D /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		F472E44E16701FAC003A073D /* SDViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDViewController.h; sourceTree = "<group>"; };
 		F472E44F16701FAC003A073D /* SDViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDViewController.m; sourceTree = "<group>"; };
+		F4E215B3167044F70070943B /* SDBasicInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBasicInfoViewController.h; sourceTree = "<group>"; };
+		F4E215B4167044F70070943B /* SDBasicInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBasicInfoViewController.m; sourceTree = "<group>"; };
+		F4E215B716704CEB0070943B /* SDSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDSettingViewController.h; sourceTree = "<group>"; };
+		F4E215B816704CEB0070943B /* SDSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDSettingViewController.m; sourceTree = "<group>"; };
+		F4E215BA1670522C0070943B /* SDConfirmationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDConfirmationViewController.h; sourceTree = "<group>"; };
+		F4E215BB1670522C0070943B /* SDConfirmationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDConfirmationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,12 @@
 				F472E44E16701FAC003A073D /* SDViewController.h */,
 				F472E44F16701FAC003A073D /* SDViewController.m */,
 				F472E43A16701FAC003A073D /* Supporting Files */,
+				F4E215B3167044F70070943B /* SDBasicInfoViewController.h */,
+				F4E215B4167044F70070943B /* SDBasicInfoViewController.m */,
+				F4E215B716704CEB0070943B /* SDSettingViewController.h */,
+				F4E215B816704CEB0070943B /* SDSettingViewController.m */,
+				F4E215BA1670522C0070943B /* SDConfirmationViewController.h */,
+				F4E215BB1670522C0070943B /* SDConfirmationViewController.m */,
 			);
 			path = Dec6;
 			sourceTree = "<group>";
@@ -177,6 +192,9 @@
 				F472E44016701FAC003A073D /* main.m in Sources */,
 				F472E44416701FAC003A073D /* SDAppDelegate.m in Sources */,
 				F472E45016701FAC003A073D /* SDViewController.m in Sources */,
+				F4E215B5167044F70070943B /* SDBasicInfoViewController.m in Sources */,
+				F4E215B916704CEB0070943B /* SDSettingViewController.m in Sources */,
+				F4E215BC1670522C0070943B /* SDConfirmationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,7 +242,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -245,7 +263,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -258,6 +276,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dec6/Dec6-Prefix.pch";
 				INFOPLIST_FILE = "Dec6/Dec6-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -269,6 +288,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Dec6/Dec6-Prefix.pch";
 				INFOPLIST_FILE = "Dec6/Dec6-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -293,6 +313,7 @@
 				F472E45516701FAC003A073D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

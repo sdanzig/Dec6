@@ -13,6 +13,13 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    self.model = [[NSMutableDictionary alloc] init];
+    [self.model setObject:@"Not specified" forKey:@"desc"];
+    [self.model setObject:@"Not specified" forKey:@"location"];
+    [self.model setObject:@"Not specified" forKey:@"time of day"];
+    [self.model setObject:@"Not specified" forKey:@"camera pos"];
+    [self.model setObject:@"Not specified" forKey:@"scene"];
+    [self.model setObject:@"Not specified" forKey:@"take"];
     return YES;
 }
 							
